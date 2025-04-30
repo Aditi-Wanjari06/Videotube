@@ -1,0 +1,11 @@
+{
+  "name": "videotube",
+  "version": "1.0.0",
+  "description": "Prject using MERN Stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aditi Wanjari",
+  "license": "ISC"
+}
