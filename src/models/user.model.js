@@ -51,6 +51,7 @@ const userSchema = new Schema(
     }
 )
 
+//pre => it is a middleware , "save" is a method
 userSchema.pre("save", async function (next) {
     if (!this.isModified("password")) return next();
 
