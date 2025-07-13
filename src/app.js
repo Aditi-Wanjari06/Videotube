@@ -17,4 +17,16 @@ app.use(express.static("public")) // if data couldn't retrieve from cloudinary, 
 app.use(cookieParser())
 
 
+
+//import routes
+import userRouter from "./routes/users.routes.js"
+
+//route declaration
+app.use("/api/v1/users", userRouter)
+
+
+
+
+
+
 export { app };
