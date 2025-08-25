@@ -21,7 +21,10 @@ const uploadOnCloudinary = async (localFilePath) => {
 
         //file has been uploaded succesfully
         console.log("file is uploaded on cloudinary", uploadResult.url);
+
+        {/*fs.unlinkSync(localFilePath) //uncomment this after coverImage and avatar works*/}
         return uploadResult;
+
 
     } catch (error) {
         fs.unlinkSync(localFilePath) //remove the locally saved temporary file as the upload operation got failed

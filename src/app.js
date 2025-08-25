@@ -24,8 +24,12 @@ import userRouter from "./routes/users.routes.js"
 //route declaration
 app.use("/api/v1/users", userRouter)
 
+app.use("/api/v1/register", userRouter)
 
 
+app.get('/hello', (req, res) => {
+    res.send('Hello, World!');
+});
 
 
 
